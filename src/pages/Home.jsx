@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <h2>Welcome to My Personal Website</h2>
-      <p>This is the home page. More content coming soon!</p>
-    </div>
+    <section className="container" id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is a React-based vCard personal website inspired by codewithsadee's template.</p>
+    </section>
   );
-};
-
-export default Home;
+}

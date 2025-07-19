@@ -1,14 +1,21 @@
 {
-  "name": "website",
+  "name": "hcd24.github.io",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0"
   },
-  "scripts": {
-    "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.0.0",
+    "gh-pages": "^6.0.0"
   }
 }
