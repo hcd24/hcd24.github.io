@@ -40,7 +40,16 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    
+    // Get the testimonial title element and its LinkedIn URL
+    const titleElement = this.querySelector("[data-testimonials-title]");
+    const linkedinUrl = titleElement.getAttribute("data-linkedin");
+    
+    // Update the modal title with a LinkedIn link
+    const modalTitleLink = document.querySelector(".modal-linkedin-link");
+    modalTitleLink.href = linkedinUrl;
+    modalTitleLink.textContent = titleElement.textContent;
+    
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
     
     // Get the time element from the clicked testimonial and update the modal's time

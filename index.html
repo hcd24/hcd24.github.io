@@ -428,7 +428,7 @@
                   <img src="./assets/images/avatar-1.png" alt="Nimit Mankodi" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nimit Mankodi</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-linkedin="https://www.linkedin.com/in/nimit-mankodi/">Nimit Mankodi</h4>
                 
                 <time datetime="2025-01-10">January 10, 2025</time>
 
@@ -450,7 +450,7 @@
                   <img src="./assets/images/avatar-2.png" alt="Daniel Fourman" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Fourman</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-linkedin="https://www.linkedin.com/in/daniel-fourman/">Daniel Fourman</h4>
 
                 <time datetime="2022-08-20">August 20, 2022</time>
 
@@ -470,7 +470,7 @@
                   <img src="./assets/images/avatar-3.png" alt="Adrian Flesner" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Adrian Flesner</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-linkedin="https://www.linkedin.com/in/adrian-flesner-b2350a11/">Adrian Flesner</h4>
 
                 <time datetime="2021-09-10">September 10, 2021</time>
 
@@ -492,7 +492,7 @@
                   <img src="./assets/images/avatar-4.png" alt="Thiago Puluceno" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Thiago Puluceno</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-linkedin="https://www.linkedin.com/in/puluceno/">Thiago Puluceno</h4>
 
                 <time datetime="2021-08-24">August 24, 2021</time>
 
@@ -536,7 +536,9 @@
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title></h4>
+              <h4 class="h3 modal-title">
+                <a href="" class="modal-linkedin-link" data-modal-title></a>
+              </h4>
 
               <time></time>
 
@@ -811,6 +813,18 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    .modal-linkedin-link {
+      color: var(--white-2);
+      text-decoration: none;
+      transition: color var(--transition-1);
+    }
+
+    .modal-linkedin-link:hover {
+      color: var(--orange-yellow-crayola);
+    }
+  </style>
 
 </body>
 
