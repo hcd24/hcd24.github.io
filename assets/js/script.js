@@ -42,6 +42,12 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    
+    // Get the time element from the clicked testimonial and update the modal's time
+    const timeElement = this.querySelector("time");
+    const modalTime = document.querySelector(".modal-content time");
+    modalTime.innerHTML = timeElement.innerHTML;
+    modalTime.setAttribute("datetime", timeElement.getAttribute("datetime"));
 
     testimonialsModalFunc();
 
